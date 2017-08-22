@@ -1,7 +1,7 @@
 
 SRC_URI = "git://github.com/Spawn32/imx6-uboot/"
-#SRCREV = "solo_v1.0.0"
-SRCREV = "sololink_v1.9.1"
+SRCREV = "solo_v1.0.0"
+# SRCREV = "sololink_v1.9.1"
 # Tag :sololink_v1.9.1 for Kernel 3.14.28
 # save UBOOT_CONFIG as separate names
 do_deploy_append() {
