@@ -6,11 +6,11 @@ LICENSE = "CLOSED"
 # Pull from specific tag by default
 #SRCREV = "v2.2.4"
 SRCREV = "master"
-SRC_URI = "git://github.com/OpenSolo/SoloLink/"
+SRC_URI = "git://github.com/Spawn32/SoloLink/"
 
 # Or, AUTOREV means pull HEAD of the branch in the URI
 #SRCREV = "${AUTOREV}"
-#SRC_URI = "git://github.com/OpenSolo/SoloLink/;branch=master"
+#SRC_URI = "git://github.com/Spawn32/SoloLink/;branch=master"
 
 S = "${WORKDIR}/git"
 
