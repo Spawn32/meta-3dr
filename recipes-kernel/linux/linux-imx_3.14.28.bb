@@ -1,18 +1,14 @@
-# Copyright (C) 2013-2015 Freescale Semiconductor
-# Released under the MIT license (see COPYING.MIT for the terms)
 
-SUMMARY = "Linux Kernel provided and supported by Freescale"
-DESCRIPTION = "Linux Kernel provided and supported by Freescale with focus on \
-i.MX Family Reference Boards. It includes support for many IPs such as GPU, VPU and IPU."
 
 require recipes-kernel/linux/linux-imx.inc
 require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
+COMPATIBLE_MACHINE = "(mx6)"
+
 SRCBRANCH = "imx_3.14.28_1.0.0_ga"
-LOCALVERSION = "-1.0.0_ga"
-SRCREV = "91cf351a2afc17ac4a260e4d2ad1e32d00925a1b"
+SRC_URI = "git://github.com/Spawn32/imx6-linux/"
 
 SRC_URI += " \
     file://0001-ARM-imx6q-drop-unnecessary-semicolon.patch \
@@ -22,7 +18,7 @@ SRC_URI += " \
     file://0005-Revert-net-fec-fix-the-warning-found-by-dma-debug.patch \
 "
 
-COMPATIBLE_MACHINE = "(mx6)"
+LOCALVERSION = "-1.0.0_ga"
 
 IMX_TEST_SUPPORT = "y"
 
