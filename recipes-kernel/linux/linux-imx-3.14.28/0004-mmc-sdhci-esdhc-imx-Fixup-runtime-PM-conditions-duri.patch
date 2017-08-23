@@ -29,7 +29,6 @@ index 043866c..10ef824 100644
  	pm_suspend_ignore_children(&pdev->dev, 1);
 +	pm_runtime_enable(&pdev->dev);
  
- 	return 0;
- 
+ 	return 0; 
 -- 
 1.9.3
