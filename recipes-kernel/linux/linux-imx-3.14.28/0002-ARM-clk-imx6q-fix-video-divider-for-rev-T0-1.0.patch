@@ -37,4 +37,3 @@ index a5107ab..cf060a9 100644
  	clk[IMX6QDL_PLL1_BYPASS_SRC] = imx_clk_mux("pll1_bypass_src", base + 0x00, 14, 2, pll_bypass_src_sels, ARRAY_SIZE(pll_bypass_src_sels));
 -- 
 2.1.4
-
